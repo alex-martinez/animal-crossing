@@ -1,0 +1,30 @@
+<div class="card-list">
+  <div *ngFor="let insect of INSECTS" class="card-list__card">
+    <div class="details">
+      <div class="details__row">
+        <div class="details__label">Name</div>
+        <div class="details__value">{{ insect.name }}</div>
+      </div>
+
+      <div class="details__row">
+        <div class="details__label">Price</div>
+        <div class="details__value">{{ insect.price }}</div>
+      </div>
+
+      <div class="details__row">
+        <div class="details__label">Location</div>
+        <div class="details__value">{{ insect.location }}</div>
+      </div>
+
+      <div class="details__row">
+        <div class="details__label">Months Active</div>
+        <div class="details__value">{{ getMonthNames(insect.monthsActive).join(', ') }}</div>
+      </div>
+
+      <div class="details__row">
+        <div class="details__label">Hours Active</div>
+        <div class="details__value">{{ insect.hoursActive }}</div>
+      </div>
+    </div>
+  </div>
+</div>
