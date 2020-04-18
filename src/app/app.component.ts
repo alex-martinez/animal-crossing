@@ -12,11 +12,24 @@ import { tap, map, debounceTime, distinctUntilChanged, switchMap } from 'rxjs/op
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  allItems = [...FISHES, ...INSECTS];
   insects: Insect[] = INSECTS;
   fishes: Fish[] = FISHES;
-  insects$: Observable<Insect[]>;
+  items$: Observable<Insect[]>;
 
   @ViewChild('searchInput', { static: true }) searchInput: ElementRef;
+
+  ngOnInit() {
+    const searchText$ = fromEvent<any>(this.searchInput.nativeElement, 'keyup')
+      .pipe(
+      map(event => event.target.value),
+      debounceTime(300),
+      distinctUntilChanged(),
+      switchMap(search => this.filterInsects(search))
+      );
+
+    this.items$ = concat(of(this.allItems), searchText$);
+  }
 
   getMonthNames(monthList: number[]): string[] {
     if (monthList.length === 12) {
@@ -31,22 +44,10 @@ export class AppComponent implements OnInit {
     return monthList.map(m => months[m]);
   }
 
-  ngOnInit() {
-    const searchText$ = fromEvent<any>(this.searchInput.nativeElement, 'keyup')
-      .pipe(
-      map(event => event.target.value),
-      debounceTime(300),
-      distinctUntilChanged(),
-      switchMap(search => this.filterInsects(search))
-      );
-
-    this.insects$ = concat(of(this.insects), searchText$);
-  }
-
   filterInsects(search = '') {
     // const exactMatch = (insect) => RegExp(search.toLowerCase(), 'g').test(insect.name.toLowerCase());
     const fuzzyMatch = (insect: Insect) => this.fuzzyMatch(search.toLowerCase(), insect.name.toLowerCase());
-    const filteredList = this.insects.filter(fuzzyMatch);
+    const filteredList = this.allItems.filter(fuzzyMatch);
     return of(filteredList);
   }
 

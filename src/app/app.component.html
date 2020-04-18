@@ -6,39 +6,39 @@
     placeholder="Search...">
 </div>
 
-<!-- <table *ngIf="(insects$ | async) as insects">
-  <tr *ngFor="let insect of insects">
-    <th *ngFor="let key of Object.values(insect)">
+<!-- <table *ngIf="(items$ | async) as items">
+  <tr *ngFor="let item of items">
+    <th *ngFor="let key of (Object.key(item))">
       {{ key }}
     </th>
   </tr>
 </table> -->
 
-<div class="card-list" *ngIf="(insects$ | async) as insects">
-  <div *ngFor="let insect of insects" class="card-list__card">
+<div class="card-list" *ngIf="(items$ | async) as items">
+  <div *ngFor="let item of items" class="card-list__card">
     <div class="card-list__card-title">
-      {{ insect.name }}
+      {{ item.name }}
     </div>
 
     <div class="details">
       <div class="details__row">
         <div class="details__label">Price</div>
-        <div class="details__value">{{ insect.price | number: '.0'}}</div>
+        <div class="details__value">{{ item.price | number: '.0'}}</div>
       </div>
 
       <div class="details__row">
         <div class="details__label">Location</div>
-        <div class="details__value">{{ insect.location }}</div>
+        <div class="details__value">{{ item.location }}</div>
       </div>
 
       <div class="details__row">
         <div class="details__label">Months Active</div>
-        <div class="details__value">{{ getMonthNames(insect.monthsActive).join(', ') }}</div>
+        <div class="details__value">{{ getMonthNames(item.monthsActive).join(', ') }}</div>
       </div>
 
       <div class="details__row">
         <div class="details__label">Hours Active</div>
-        <div class="details__value">{{ insect.hoursActive }}</div>
+        <div class="details__value">{{ item.hoursActive }}</div>
       </div>
     </div>
   </div>
