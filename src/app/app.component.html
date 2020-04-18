@@ -1,14 +1,29 @@
-<div class="card-list">
-  <div *ngFor="let insect of INSECTS" class="card-list__card">
+<div class="search">
+  <input
+    #searchInput
+    class="search__input"
+    type="text"
+    placeholder="Search...">
+</div>
+
+<!-- <table *ngIf="(insects$ | async) as insects">
+  <tr *ngFor="let insect of insects">
+    <th *ngFor="let key of Object.values(insect)">
+      {{ key }}
+    </th>
+  </tr>
+</table> -->
+
+<div class="card-list" *ngIf="(insects$ | async) as insects">
+  <div *ngFor="let insect of insects" class="card-list__card">
+    <div class="card-list__card-title">
+      {{ insect.name }}
+    </div>
+
     <div class="details">
       <div class="details__row">
-        <div class="details__label">Name</div>
-        <div class="details__value">{{ insect.name }}</div>
-      </div>
-
-      <div class="details__row">
         <div class="details__label">Price</div>
-        <div class="details__value">{{ insect.price }}</div>
+        <div class="details__value">{{ insect.price | number: '.0'}}</div>
       </div>
 
       <div class="details__row">

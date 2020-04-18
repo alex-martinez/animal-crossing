@@ -1,0 +1,89 @@
+$media-queries: (
+  xs: '(min-width: 0) and (max-width: 575.9px)',
+  sm: '(min-width: 576px) and (max-width: 767.9px)',
+  md: '(min-width: 768px) and (max-width: 991.9px)',
+  lg: '(min-width: 992px) and (max-width: 1919.9px)',
+  xl: '(min-width: 1200px) and (max-width: 4999.9px)',
+  lt-sm: '(max-width: 575.9px)',
+  lt-md: '(max-width: 767.9px)',
+  lt-lg: '(max-width: 991.9px)',
+  lt-xl: '(max-width: 1919.9px)',
+  gt-xs: '(min-width: 576px)',
+  gt-sm: '(min-width: 768px)',
+  gt-md: '(min-width: 992px)',
+  gt-lg: '(min-width: 1200px)'
+);
+
+@mixin mq($mq) {
+    @if map-has-key($media-queries, $mq) {
+        @media screen and #{map-get($media-queries, $mq)} {
+            @content;
+        }
+    } @else {
+        @error 'Invalid media query mixin value: #{$mq}.';
+    }
+}
+
+@mixin saw-tooth-vertical($width: 12px, $bg: #fff) {
+  background-image:
+    // Top jagged
+    linear-gradient(135deg, $bg 50%, transparent 50%),
+    linear-gradient(225deg, $bg 50%, transparent 50%),
+    // Bottom jagged
+    linear-gradient(45deg, $bg 50%, transparent 50%),
+    linear-gradient(-45deg, $bg 50%, transparent 50%);
+  background-position:
+    // Top jagged
+    top left, top left,
+    // Bottom jagged
+    bottom left, bottom left;
+  background-size: $width $width;
+  background-repeat: repeat-x;
+}
+
+@mixin saw-tooth-horizontal($width: 12px, $bg: #fff) {
+  background-image:
+    // Left jagged
+    linear-gradient(135deg, $bg 50%, transparent 50%),
+    linear-gradient(45deg, $bg 50%, transparent 50%),
+    // Right jagged
+    linear-gradient(-135deg, $bg 50%, transparent 50%),
+    linear-gradient(-45deg, $bg 50%, transparent 50%);
+    background-size: $width $width;
+    background-repeat: repeat-y;
+
+    background-position-x: 0, 0, 100%, 100%;
+    background-position-y: $width/2, $width/2, $width/2, $width/2; // Start at peak
+    // background-position:
+    //   // Left jagged
+    //   top left, top left,
+    //   // Right jagged
+    //   top right, top right;
+}
+
+@mixin saw-tooth($width: 12px, $bg: #fff) {
+  background-image:
+    // Top jagged
+    linear-gradient(135deg, $bg 50%, transparent 50%),
+    linear-gradient(225deg, $bg 50%, transparent 50%),
+    // Bottom jagged
+    linear-gradient(45deg, $bg 50%, transparent 50%),
+    linear-gradient(-45deg, $bg 50%, transparent 50%),
+    // Left jagged
+    linear-gradient(135deg, $bg 50%, transparent 50%),
+    linear-gradient(45deg, $bg 50%, transparent 50%),
+    // Right jagged
+    linear-gradient(-135deg, $bg 50%, transparent 50%),
+    linear-gradient(-45deg, $bg 50%, transparent 50%);
+  background-position:
+    // Top jagged
+    top left, top left,
+    // Bottom jagged
+    bottom left, bottom left,
+    // Left jagged
+    top left, top left,
+    // Right jagged
+    top right, top right;
+  background-size: $width $width;
+  background-repeat: repeat-x, repeat-x, repeat-x, repeat-x, repeat-y, repeat-y, repeat-y, repeat-y;
+}

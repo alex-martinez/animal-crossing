@@ -1,11 +1,33 @@
+@import 'styles/utilities';
+
+@font-face {
+  font-family: 'FinkHeavy';
+  src: url('assets/FinkHeavy.woff2') format('woff2'),
+       url('assets/FinkHeavy.woff') format('woff'),
+       url('assets/FinkHeavy.ttf')  format('truetype')
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
 :root {
   font-size: 10px;
 }
 
 /* You can add global styles to this file, and also import other style files */
 body {
-  font-family: -apple-system,BlinkMacSystemFont,Roboto,Droid Serif,Segoe UI,Oxygen-Sans,Ubuntu,Cantarell,Georgia,serif;
+  font-family: Nunito, sans-serif;
   font-size: 1.6rem;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.3;
+  background-image: url('assets/background.jpg');
+  background-repeat: repeat-x;
+  background-color: #f9f9ef;
+  background-attachment: fixed;
+  background-position: 50% 0;
+
+  @include mq('gt-md') {
+    background-size: 25%;
+  }
 }
