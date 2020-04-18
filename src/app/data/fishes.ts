@@ -6,7 +6,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 10, 11],
-      shadowSize: 'Tiny'
+      shadowSize: 'Tiny',
+      type: 'fish'
   },
   {
       name: 'Pale Chub',
@@ -14,7 +15,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '9AM-4PM',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'Tiny'
+      shadowSize: 'Tiny',
+      type: 'fish'
   },
   {
       name: 'Crucian Carp',
@@ -22,7 +24,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Dace',
@@ -30,7 +33,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '4PM-9AM',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'Medium'
+      shadowSize: 'Medium',
+      type: 'fish'
   },
   {
       name: 'Carp',
@@ -38,7 +42,8 @@ export const FISHES = [
       location: 'Pond',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'Large'
+      shadowSize: 'Large',
+      type: 'fish'
   },
   {
       name: 'Koi',
@@ -46,7 +51,8 @@ export const FISHES = [
       location: 'Pond',
       hoursActive: '4PM-9AM',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'Large'
+      shadowSize: 'Large',
+      type: 'fish'
   },
   {
       name: 'Goldfish',
@@ -54,7 +60,8 @@ export const FISHES = [
       location: 'Pond',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'Tiny'
+      shadowSize: 'Tiny',
+      type: 'fish'
   },
   {
       name: 'Pop-eyed Goldfish',
@@ -62,7 +69,8 @@ export const FISHES = [
       location: 'Pond',
       hoursActive: '9AM-4PM',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'Tiny'
+      shadowSize: 'Tiny',
+      type: 'fish'
   },
   {
       name: 'Ranchu Goldfish',
@@ -70,7 +78,8 @@ export const FISHES = [
       location: 'Pond',
       hoursActive: '9AM-4PM',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Killifish',
@@ -78,7 +87,8 @@ export const FISHES = [
       location: 'Pond',
       hoursActive: 'All',
       monthsActive: [3, 4, 5, 6, 7],
-      shadowSize: 'Tiny'
+      shadowSize: 'Tiny',
+      type: 'fish'
   },
   {
       name: 'Crawfish',
@@ -86,7 +96,8 @@ export const FISHES = [
       location: 'Pond',
       hoursActive: 'All',
       monthsActive: [3, 4, 5, 6, 7, 8],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Soft-shelled Turtle',
@@ -94,7 +105,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '4PM-9AM',
       monthsActive: [7, 8],
-      shadowSize: 'Large'
+      shadowSize: 'Large',
+      type: 'fish'
   },
   {
       name: 'Snapping Turtle',
@@ -102,7 +114,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '9PM-4AM',
       monthsActive: [3, 4, 5, 6, 7, 8, 9],
-      shadowSize: 'XL'
+      shadowSize: 'XL',
+      type: 'fish'
   },
   {
       name: 'Tadpole',
@@ -110,7 +123,8 @@ export const FISHES = [
       location: 'Pond',
       hoursActive: 'All',
       monthsActive: [2, 3, 4, 5, 6],
-      shadowSize: 'Tiny'
+      shadowSize: 'Tiny',
+      type: 'fish'
   },
   {
       name: 'Frog',
@@ -118,7 +132,8 @@ export const FISHES = [
       location: 'Pond',
       hoursActive: 'All',
       monthsActive: [4, 5, 6, 7],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Freshwater Goby',
@@ -126,7 +141,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '4PM-9AM',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Loach',
@@ -134,7 +150,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: 'All',
       monthsActive: [2, 3, 4],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Catfish',
@@ -142,7 +159,8 @@ export const FISHES = [
       location: 'Pond',
       hoursActive: '4PM-9AM',
       monthsActive: [4, 5, 6, 7, 8, 9],
-      shadowSize: 'Large'
+      shadowSize: 'Large',
+      type: 'fish'
   },
   {
       name: 'Giant Snakehead',
@@ -150,7 +168,8 @@ export const FISHES = [
       location: 'Pond',
       hoursActive: '9AM-4PM',
       monthsActive: [5, 6, 7],
-      shadowSize: 'XL'
+      shadowSize: 'XL',
+      type: 'fish'
   },
   {
       name: 'Bluegill',
@@ -158,7 +177,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '9AM-4PM',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Yellow Perch',
@@ -166,7 +186,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 9, 10, 11],
-      shadowSize: 'Medium'
+      shadowSize: 'Medium',
+      type: 'fish'
   },
   {
       name: 'Black Bass',
@@ -174,7 +195,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'Large'
+      shadowSize: 'Large',
+      type: 'fish'
   },
   {
       name: 'Tilapia',
@@ -182,7 +204,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: 'All',
       monthsActive: [5, 6, 7, 8, 9],
-      shadowSize: 'Medium'
+      shadowSize: 'Medium',
+      type: 'fish'
   },
   {
       name: 'Pike',
@@ -190,7 +213,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: 'All',
       monthsActive: [8, 9, 10, 11],
-      shadowSize: 'XL'
+      shadowSize: 'XL',
+      type: 'fish'
   },
   {
       name: 'Pond Smelt',
@@ -198,7 +222,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: 'All',
       monthsActive: [0, 1, 11],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Sweetfish',
@@ -206,7 +231,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: 'All',
       monthsActive: [6, 7, 8],
-      shadowSize: 'Medium'
+      shadowSize: 'Medium',
+      type: 'fish'
   },
   {
       name: 'Cherry Salmon',
@@ -214,7 +240,8 @@ export const FISHES = [
       location: 'River (clifftop)',
       hoursActive: '4PM-9AM',
       monthsActive: [2, 3, 4, 5, 8, 9, 10],
-      shadowSize: 'Medium'
+      shadowSize: 'Medium',
+      type: 'fish'
   },
   {
       name: 'Char',
@@ -222,7 +249,8 @@ export const FISHES = [
       location: 'River (clifftop)',
       hoursActive: '4PM-9AM',
       monthsActive: [2, 3, 4, 5, 8, 9, 10],
-      shadowSize: 'Medium'
+      shadowSize: 'Medium',
+      type: 'fish'
   },
   {
       name: 'Golden Trout',
@@ -230,7 +258,8 @@ export const FISHES = [
       location: 'River (clifftop)',
       hoursActive: '4PM-9AM',
       monthsActive: [2, 3, 4, 8, 9, 10],
-      shadowSize: 'Medium'
+      shadowSize: 'Medium',
+      type: 'fish'
   },
   {
       name: 'Stringfish',
@@ -238,7 +267,8 @@ export const FISHES = [
       location: 'River (clifftop)',
       hoursActive: '4PM-9AM',
       monthsActive: [0, 1, 2, 11],
-      shadowSize: 'XL'
+      shadowSize: 'XL',
+      type: 'fish'
   },
   {
       name: 'Salmon',
@@ -246,7 +276,8 @@ export const FISHES = [
       location: 'River (mouth)',
       hoursActive: 'All',
       monthsActive: [8],
-      shadowSize: 'Large'
+      shadowSize: 'Large',
+      type: 'fish'
   },
   {
       name: 'King Salmon',
@@ -254,7 +285,8 @@ export const FISHES = [
       location: 'River (mouth)',
       hoursActive: 'All',
       monthsActive: [8],
-      shadowSize: 'XXL'
+      shadowSize: 'XXL',
+      type: 'fish'
   },
   {
       name: 'Mitten Crab',
@@ -262,7 +294,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '4PM-9AM',
       monthsActive: [8, 9, 10],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Guppy',
@@ -270,7 +303,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '9AM-4PM',
       monthsActive: [3, 4, 5, 6, 7, 8, 9, 10],
-      shadowSize: 'Tiny'
+      shadowSize: 'Tiny',
+      type: 'fish'
   },
   {
       name: 'Nibble Fish',
@@ -278,7 +312,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '9AM-4PM',
       monthsActive: [4, 5, 6, 7, 8],
-      shadowSize: 'Tiny'
+      shadowSize: 'Tiny',
+      type: 'fish'
   },
   {
       name: 'Angelfish',
@@ -286,7 +321,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '4PM-9AM',
       monthsActive: [4, 5, 6, 7, 8, 9],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Betta',
@@ -294,7 +330,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '9AM-4PM',
       monthsActive: [4, 5, 6, 7, 8, 9],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Neon Tetra',
@@ -302,7 +339,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '9AM-4PM',
       monthsActive: [3, 4, 5, 6, 7, 8, 9, 10],
-      shadowSize: 'TIny'
+      shadowSize: 'TIny',
+      type: 'fish'
   },
   {
       name: 'Rainbowfish',
@@ -310,7 +348,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '9AM-4PM',
       monthsActive: [4, 5, 6, 7, 8, 9],
-      shadowSize: 'Tiny'
+      shadowSize: 'Tiny',
+      type: 'fish'
   },
   {
       name: 'Piranha',
@@ -318,7 +357,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '9AM-4PM, 9PM-4AM',
       monthsActive: [5, 6, 7, 8],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Arowana',
@@ -326,7 +366,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '4PM-9AM',
       monthsActive: [5, 6, 7, 8],
-      shadowSize: 'Large'
+      shadowSize: 'Large',
+      type: 'fish'
   },
   {
       name: 'Dorado',
@@ -334,7 +375,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '4AM-9PM',
       monthsActive: [5, 6, 7, 8],
-      shadowSize: 'XL'
+      shadowSize: 'XL',
+      type: 'fish'
   },
   {
       name: 'Gar',
@@ -342,7 +384,8 @@ export const FISHES = [
       location: 'Pond',
       hoursActive: '4PM-9AM',
       monthsActive: [5, 6, 7, 8],
-      shadowSize: 'XXL'
+      shadowSize: 'XXL',
+      type: 'fish'
   },
   {
       name: 'Arapaima',
@@ -350,7 +393,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '4PM-9AM',
       monthsActive: [5, 6, 7, 8],
-      shadowSize: 'XXL'
+      shadowSize: 'XXL',
+      type: 'fish'
   },
   {
       name: 'Saddled Bichir',
@@ -358,7 +402,8 @@ export const FISHES = [
       location: 'River',
       hoursActive: '9PM-4AM',
       monthsActive: [5, 6, 7, 8],
-      shadowSize: 'Large'
+      shadowSize: 'Large',
+      type: 'fish'
   },
   {
       name: 'Sturgeon',
@@ -366,7 +411,8 @@ export const FISHES = [
       location: 'River (mouth)',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 8, 9, 10, 11],
-      shadowSize: 'XXL'
+      shadowSize: 'XXL',
+      type: 'fish'
   },
   {
       name: 'Sea Butterfly',
@@ -374,7 +420,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 11],
-      shadowSize: 'Tiny'
+      shadowSize: 'Tiny',
+      type: 'fish'
   },
   {
       name: 'Sea Horse',
@@ -382,7 +429,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [3, 4, 5, 6, 7, 8, 9, 10],
-      shadowSize: 'Tiny'
+      shadowSize: 'Tiny',
+      type: 'fish'
   },
   {
       name: 'Clown Fish',
@@ -390,7 +438,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [3, 4, 5, 6, 7, 8],
-      shadowSize: 'Tiny'
+      shadowSize: 'Tiny',
+      type: 'fish'
   },
   {
       name: 'Surgeonfish',
@@ -398,7 +447,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [3, 4, 5, 6, 7, 8],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Butterfly Fish',
@@ -406,7 +456,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [3, 4, 5, 6, 7, 8],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Napoleonfish',
@@ -414,7 +465,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: '4AM-9PM',
       monthsActive: [6, 7],
-      shadowSize: 'XXL'
+      shadowSize: 'XXL',
+      type: 'fish'
   },
   {
       name: 'Zebra Turkeyfish',
@@ -422,7 +474,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [3, 4, 5, 6, 7, 8, 9, 10],
-      shadowSize: 'Medium'
+      shadowSize: 'Medium',
+      type: 'fish'
   },
   {
       name: 'Blowfish',
@@ -430,7 +483,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: '9PM-4AM',
       monthsActive: [0, 1, 10, 11],
-      shadowSize: 'Medium'
+      shadowSize: 'Medium',
+      type: 'fish'
   },
   {
       name: 'Puffer Fish',
@@ -438,7 +492,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [6, 7, 8],
-      shadowSize: 'Medium'
+      shadowSize: 'Medium',
+      type: 'fish'
   },
   {
       name: 'Anchovy',
@@ -446,7 +501,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: '4AM-9PM',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Horse Mackerel',
@@ -454,7 +510,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Barred Knifejaw',
@@ -462,7 +519,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [2, 3, 4, 5, 6, 7, 8, 9, 10],
-      shadowSize: 'Medium'
+      shadowSize: 'Medium',
+      type: 'fish'
   },
   {
       name: 'Sea Bass',
@@ -470,7 +528,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'XL'
+      shadowSize: 'XL',
+      type: 'fish'
   },
   {
       name: 'Red Snapper',
@@ -478,7 +537,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'Large'
+      shadowSize: 'Large',
+      type: 'fish'
   },
   {
       name: 'Dab',
@@ -486,7 +546,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 3, 9, 10, 11],
-      shadowSize: 'Medium'
+      shadowSize: 'Medium',
+      type: 'fish'
   },
   {
       name: 'Olive Flounder',
@@ -494,7 +555,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'XL'
+      shadowSize: 'XL',
+      type: 'fish'
   },
   {
       name: 'Squid',
@@ -502,7 +564,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 11],
-      shadowSize: 'Medium'
+      shadowSize: 'Medium',
+      type: 'fish'
   },
   {
       name: 'Moray Eel',
@@ -510,7 +573,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [7, 8, 9],
-      shadowSize: 'Unique - Long/thin/narrow'
+      shadowSize: 'Unique - Long/thin/narrow',
+      type: 'fish'
   },
   {
       name: 'Ribbon Eel',
@@ -518,7 +582,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [5, 6, 7, 8, 9],
-      shadowSize: 'Unique - long/thin/narrow'
+      shadowSize: 'Unique - long/thin/narrow',
+      type: 'fish'
   },
   {
       name: 'Tuna',
@@ -526,7 +591,8 @@ export const FISHES = [
       location: 'Pier',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 3, 10, 11],
-      shadowSize: 'XXL'
+      shadowSize: 'XXL',
+      type: 'fish'
   },
   {
       name: 'Blue Marlin',
@@ -534,7 +600,8 @@ export const FISHES = [
       location: 'Pier',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 3, 6, 7, 8, 10, 11],
-      shadowSize: 'XXL'
+      shadowSize: 'XXL',
+      type: 'fish'
   },
   {
       name: 'Giant Trevally',
@@ -542,7 +609,8 @@ export const FISHES = [
       location: 'Pier',
       hoursActive: 'All',
       monthsActive: [4, 5, 6, 7, 8, 9],
-      shadowSize: 'XL'
+      shadowSize: 'XL',
+      type: 'fish'
   },
   {
       name: 'Mahi-mahi',
@@ -550,7 +618,8 @@ export const FISHES = [
       location: 'Pier',
       hoursActive: 'All',
       monthsActive: [4, 5, 6, 7, 8, 9],
-      shadowSize: 'XL'
+      shadowSize: 'XL',
+      type: 'fish'
   },
   {
       name: 'Ocean Sunfish',
@@ -558,7 +627,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: '4AM-9PM',
       monthsActive: [6, 7, 8],
-      shadowSize: 'XXL - with an extra fin'
+      shadowSize: 'XXL - with an extra fin',
+      type: 'fish'
   },
   {
       name: 'Ray',
@@ -566,7 +636,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: '4AM-9PM',
       monthsActive: [7, 8, 9, 10],
-      shadowSize: 'XL'
+      shadowSize: 'XL',
+      type: 'fish'
   },
   {
       name: 'Saw Shark',
@@ -574,7 +645,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: '4PM-9AM',
       monthsActive: [5, 6, 7, 8],
-      shadowSize: 'XXL - with an extra fin'
+      shadowSize: 'XXL - with an extra fin',
+      type: 'fish'
   },
   {
       name: 'Hammerhead Shark',
@@ -582,7 +654,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: '4PM-9AM',
       monthsActive: [5, 6, 7, 8],
-      shadowSize: 'XXL - with an extra fin'
+      shadowSize: 'XXL - with an extra fin',
+      type: 'fish'
   },
   {
       name: 'Great White Shark',
@@ -590,7 +663,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: '4PM-9AM',
       monthsActive: [5, 6, 7, 8],
-      shadowSize: 'XXL - with an extra fin'
+      shadowSize: 'XXL - with an extra fin',
+      type: 'fish'
   },
   {
       name: 'Whale Shark',
@@ -598,7 +672,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [5, 6, 7, 8],
-      shadowSize: 'XXL - with an extra fin'
+      shadowSize: 'XXL - with an extra fin',
+      type: 'fish'
   },
   {
       name: 'Suckerfish',
@@ -606,7 +681,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [5, 6, 7, 8],
-      shadowSize: 'Large- with an extra fin'
+      shadowSize: 'Large- with an extra fin',
+      type: 'fish'
   },
   {
       name: 'Football Fish',
@@ -614,7 +690,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: '4PM-9AM',
       monthsActive: [0, 1, 2, 10, 11],
-      shadowSize: 'Large'
+      shadowSize: 'Large',
+      type: 'fish'
   },
   {
       name: 'Oarfish',
@@ -622,7 +699,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 3, 4, 11],
-      shadowSize: 'XXL'
+      shadowSize: 'XXL',
+      type: 'fish'
   },
   {
       name: 'Barreleye',
@@ -630,7 +708,8 @@ export const FISHES = [
       location: 'Sea',
       hoursActive: '9PM-4AM',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'Small'
+      shadowSize: 'Small',
+      type: 'fish'
   },
   {
       name: 'Coelacanth',
@@ -638,6 +717,7 @@ export const FISHES = [
       location: 'Sea (rainy day)',
       hoursActive: 'All',
       monthsActive: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      shadowSize: 'XXL'
+      shadowSize: 'XXL',
+      type: 'fish'
   }
 ];

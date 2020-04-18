@@ -14,6 +14,27 @@
   </tr>
 </table> -->
 
+<div class="btn-group">
+  <div class="btn-group__section">
+    <strong>Sort by:</strong>
+    <button (click)="sortByPrice()">Price</button>
+    <button (click)="sortAtoZ()">A-Z</button>
+    <button (click)="sortZtoA()">Z-A</button>
+  </div>
+
+  <!-- <div class="btn-group__section">
+    <strong>Show:</strong>
+
+    <label class="checkbox-label">
+      <input type="checkbox" [(ngModel)]="shouldShowFish" (change)="filterByType($event)">Fishes
+    </label>
+
+    <label class="checkbox-label">
+      <input type="checkbox" [(ngModel)]="shouldShowInsects" (change)="filterByType($event)">Insects
+    </label>
+  </div> -->
+</div>
+
 <div class="card-list" *ngIf="(items$ | async) as items">
   <div *ngFor="let item of items" class="card-list__card">
     <div class="card-list__card-title">
@@ -39,6 +60,11 @@
       <div class="details__row">
         <div class="details__label">Hours Active</div>
         <div class="details__value">{{ item.hoursActive }}</div>
+      </div>
+
+      <div *ngIf="item.shadowSize" class="details__row">
+        <div class="details__label">Shadow Size</div>
+        <div class="details__value">{{ item.shadowSize }}</div>
       </div>
     </div>
   </div>

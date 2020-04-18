@@ -2,22 +2,47 @@
 
 .search {
   display: flex;
-  padding: 3rem 0 2rem;
+  padding: 3rem 2rem 2rem;
   justify-content: center;
 
   &__input {
     height: 5rem;
     width: 100%;
-    max-width: 35rem;
     border-radius: 1rem;
     border: none;
     padding: 0 1.8rem;
     font-size: 1.8rem;
     font-family: Nunito, sans-serif;
 
+    @include mq('gt-xs') {
+      max-width: 35rem;
+    }
+
     &:focus {
       outline: none;
     }
+  }
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+
+  button {
+    margin: 0 .3rem;
+  }
+
+  .checkbox-label {
+    margin-left: .5rem;
+  }
+
+  &__section {
+    padding: .2rem 1rem;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -29,7 +54,7 @@
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
 
   @include mq('sm') {
@@ -62,7 +87,7 @@
     font-family: 'FinkHeavy', Georgia, serif;
     font-size: 2.5rem;
     line-height: 1.2;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
@@ -71,7 +96,7 @@
 }
 
 .details {
-  padding: 1.5rem;
+  padding: 2.5rem 1.5rem 0;
 
   &__row {
     margin-bottom: 1.4rem;

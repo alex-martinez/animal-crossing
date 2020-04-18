@@ -15,7 +15,11 @@ export class AppComponent implements OnInit {
   allItems = [...FISHES, ...INSECTS];
   insects: Insect[] = INSECTS;
   fishes: Fish[] = FISHES;
-  items$: Observable<Insect[]>;
+
+  shouldShowFish = true;
+  shouldShowInsects = true;
+
+  items$: Observable<(Insect|Fish)[]>;
 
   @ViewChild('searchInput', { static: true }) searchInput: ElementRef;
 
@@ -25,10 +29,16 @@ export class AppComponent implements OnInit {
       map(event => event.target.value),
       debounceTime(300),
       distinctUntilChanged(),
-      switchMap(search => this.filterInsects(search))
+      switchMap(search => this.filterItems(search))
       );
 
     this.items$ = concat(of(this.allItems), searchText$);
+  }
+
+  filterByType(type = '') {
+    this.items$ = this.items$.pipe(
+      map((items) => items.filter((item) => item.type === type))
+    );
   }
 
   getMonthNames(monthList: number[]): string[] {
@@ -44,7 +54,7 @@ export class AppComponent implements OnInit {
     return monthList.map(m => months[m]);
   }
 
-  filterInsects(search = '') {
+  filterItems(search = '') {
     // const exactMatch = (insect) => RegExp(search.toLowerCase(), 'g').test(insect.name.toLowerCase());
     const fuzzyMatch = (insect: Insect) => this.fuzzyMatch(search.toLowerCase(), insect.name.toLowerCase());
     const filteredList = this.allItems.filter(fuzzyMatch);
@@ -55,5 +65,23 @@ export class AppComponent implements OnInit {
     pattern = '.*' + pattern.split('').join('.*') + '.*';
     const re = new RegExp(pattern);
     return re.test(str);
+  }
+
+  sortByPrice() {
+    this.items$ = this.items$.pipe(
+      map((items) => items.sort((a, b) => a.price < b.price ? 1 : -1))
+    );
+  }
+
+  sortAtoZ() {
+    this.items$ = this.items$.pipe(
+      map((items) => items.sort((a, b) => a.name < b.name ? -1 : 1))
+    );
+  }
+
+  sortZtoA() {
+    this.items$ = this.items$.pipe(
+      map((items) => items.sort((a, b) => a.name < b.name ? 1 : -1))
+    );
   }
 }

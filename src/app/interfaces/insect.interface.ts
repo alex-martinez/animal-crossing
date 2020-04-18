@@ -4,4 +4,5 @@ export interface Insect {
   readonly location: string;
   readonly hoursActive: string;
   readonly monthsActive: number[];
+  readonly type: string;
 }

@@ -1,8 +1,9 @@
 export interface Fish {
-  name: string;
-  price: number;
-  location: string;
-  hoursActive: string;
-  monthsActive: number[];
-  shadowSize: string;
+  readonly name: string;
+  readonly price: number;
+  readonly location: string;
+  readonly hoursActive: string;
+  readonly monthsActive: number[];
+  readonly shadowSize: string;
+  readonly type: string;
 }
