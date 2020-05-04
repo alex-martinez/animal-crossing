@@ -5,6 +5,7 @@ import { Fish } from './interfaces/fish.interface';
 import { Insect } from './interfaces/insect.interface';
 import { fromEvent, Observable, of, concat, from } from 'rxjs';
 import { tap, map, debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
+import { FiltersService } from './filters.service';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,10 @@ export class AppComponent implements OnInit {
   items$: Observable<(Insect|Fish)[]>;
 
   @ViewChild('searchInput', { static: true }) searchInput: ElementRef;
+
+  constructor(
+    private readonly filtersService: FiltersService
+  ) {}
 
   ngOnInit() {
     const searchText$ = fromEvent<any>(this.searchInput.nativeElement, 'keyup')
