@@ -31,10 +31,10 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     const searchText$ = fromEvent<any>(this.searchInput.nativeElement, 'keyup')
       .pipe(
-      map(event => event.target.value),
-      debounceTime(300),
-      distinctUntilChanged(),
-      switchMap(search => this.filterItems(search))
+        map(event => event.target.value),
+        debounceTime(300),
+        distinctUntilChanged(),
+        switchMap(search => this.filterItems(search))
       );
 
     this.items$ = concat(of(this.allItems), searchText$);
@@ -59,7 +59,7 @@ export class AppComponent implements OnInit {
     return monthList.map(m => months[m]);
   }
 
-  filterItems(search = '') {
+  filterItems(search = ''): Observable<(Insect|Fish)[]> {
     // const exactMatch = (insect) => RegExp(search.toLowerCase(), 'g').test(insect.name.toLowerCase());
     const fuzzyMatch = (insect: Insect) => this.fuzzyMatch(search.toLowerCase(), insect.name.toLowerCase());
     const filteredList = this.allItems.filter(fuzzyMatch);
